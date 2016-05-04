@@ -1,0 +1,45 @@
+<ion-view title="Localizar" id="page2">
+    <ion-content padding="true" class="has-header">
+        <div class="button-bar"></div>
+        <div class="button-bar"></div>
+        <div class="list card">
+            <div class="item item-body">
+				<button id="button-atualizar" style="font-weight:lighter;color:#4257F1;" class="button button-positive button-small button-icon icon-left ion-ios-loop"></button>
+
+				<button id="localizar-gprs" style="font-weight:lighter;color:#4257F1;" class="button button-positive button-small button-icon icon-left ion-connection-bars"></button>
+				<button id="localizar-sms" style="font-weight:lighter;color:#8D8D9B;" class="button button-positive button-small button-icon icon-left ion-email"></button>
+			
+            </div>
+        </div>
+        
+		<div class="google-maps">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.0892360912158!2d-47.87390768518896!3d-15.799248027283245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3b1847e72199%3A0x55852785846ff80c!2sMinist%C3%A9rio+do+Planejamento%2C+Or%C3%A7amento+e+Gest%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1462328615550" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+        <div class="list card">
+			<div class="item item-body">
+					
+					<button ng-click="localizarPainel()" style="font-weight:lighter;color:#8D8D9B;" class="button button-positive button-small button-icon icon-left ion-speedometer"></button>
+					
+					<button ng-click="localizarPower()" style="font-weight:lighter;color:#8D8D9B;" class="button button-positive button-small button-icon icon-left ion-power"></button>
+					<button ng-click="localizarAlarm()"  style="font-weight:lighter;color:#4257F1;" class="button button-positive button-small button-icon icon-left ion-android-lock"></button>
+					<button ng-click="localizarCorrente()" style="font-weight:lighter;color:#4257F1;" class="button button-positive button-small button-icon icon-left ion-ios-bolt"></button>
+
+					<button ng-click="localizarSeguir()" style="font-weight:lighter;color:#8D8D9B;" class="button button-positive button-small button-icon icon-left ion-navigate"></button>
+					
+					<button ng-click="localizarGravador()" style="font-weight:lighter;color:#8D8D9B;" class="button button-positive button-small button-icon icon-left ion-mic-c"></button>
+					
+					<button ng-click="localizarCompartilhar()" style="font-weight:lighter;color:#8D8D9B;" class="button button-positive button-small button-icon icon-left ion-android-share-alt"></button>
+					<button ng-click="localizarAlertas()" style="font-weight:lighter;color:#8D8D9B;" class="button button-positive button-small button-icon icon-left ion-ios-chatboxes-outline"></button>
+
+			</div>
+		</div>
+			<p style="color:#4257F1;"> 
+
+				Última posição: 04/05/2016 ás 8:23 am<br>
+				Veículo parado<br>
+				Alarme Ligado<br>
+				Corta Corrente Ligado<br>
+
+			</p>
+    </ion-content>
+</ion-view>
